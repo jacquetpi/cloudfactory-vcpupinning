@@ -119,7 +119,7 @@ class ExporterBash(object):
         return self.__vm_postponed_command(vm, slice_duration=slice_duration) + self.__vm_start_command(vm, self.tool_folder) + self.__vm_commands_as_str(vm, remote=remote) + self.__vm_shutdown_command(vm, self.tool_folder)
 
     def __vm_setup_command(self, vm : VmModel, folder : str):
-        return folder + "setupvm.sh " + vm.get_name() + " " + str(vm.get_cpu()) + " " + str(round(vm.get_mem()*1024)) + " " + vm.get_workload() + " ; "
+        return folder + "setupvm.sh " + vm.get_name() + " " + str(vm.get_cpu()) + " " + str(vm.get_mem()) + " " + vm.get_workload() + " ; "
 
     def __vm_nat_setup_command(self, vm : VmModel, folder : str):
         return folder + "setupvmnat.sh " + vm.get_name() + " " + vm.get_workload() + " " + str(self.__vm_host_port(vm)) + " ; "
