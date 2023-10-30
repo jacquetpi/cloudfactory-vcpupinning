@@ -128,7 +128,7 @@ class ExporterBash(object):
         return folder + "destroyvm.sh " + vm.get_name() + " ; "
 
     def __vm_start_command(self, vm : VmModel, folder : str):
-        return folder + "startvm.sh " + vm.get_name() + " " +  vm.get_workload() + " ; "
+        return folder + "startvm.sh " + vm.get_name() + " " + str(vm.get_cpu()) + " " + str(vm.get_mem()) + " " +  vm.get_workload() + " ; "
 
     def __vm_shutdown_command(self,  vm : VmModel, folder : str):
         return folder + "shutdownvm.sh " + vm.get_name() + " ; "
