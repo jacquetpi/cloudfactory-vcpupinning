@@ -7,12 +7,26 @@
 /*.java
 /*.properties
 /*.cbtool
+/*.txt
 /*.csv
+wip.sh
+vm-static-load/
+results/
+figures/
+results-treated/
+results-latency/
+generated-experiment/
+vcluster-experiments-data/cloudsimplus-dump
+vcluster-experiments-data/cloudfactory-dump
+vcluster-experiments-data/results
+vcluster-experiments-data/output*.csv
+
 # due to size constraints:
 examples-data/dynamic-azure/cloudsimplus-logs.tar.gz
 examples-data/dynamic-chameleon/cloudsimplus-logs.tar.gz
 examples-data/static-azure/cloudsimplus-logs.tar.gz
 examples-data/static-chameleon/cloudsimplus-logs.tar.gz
+
 # Misc paper
 figures/
 build_ovh_distribution.ipynb

@@ -3,6 +3,10 @@
 This is a modified version of CloudFactory implementing XXX.  
 It was used to evaluate XXXX.  
 
+```bash
+python -m generator --distribution=examples-scenario/scenario-vm-distribution-ovhcloud2023.yml --usage=examples-scenario/scenario-vm-usage-azure2017-fatinc.yml --vm=12 --output=bash --temporality=90,900,48
+```
+
 ## Simulation experiments
 
 Generate workload for our XXXX simulation (CloudSimPlus based):
